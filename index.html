@@ -9,82 +9,89 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     </head>
 
     <body>
         <div class="container">
-            <div class="tittle">calculadora</div>
-            <div class="theme-toggler active">
-                <i class="togger-icon">
-                </i>
-            </div>
-            <!--area de resultado-->
-            <div class="display-screen">
-                <div id="display"> </div>
-            </div>
+           <div class="tittle">calculadora</div>
 
-            <!--numeros y botones de la calculadora-->
-            <div class="buttons">
+           <div class="calculator ">
+              <div class="theme-toggler active">
+                  <i class="fa-solid fa-moon">
+                  </i>
+              </div>
+              <!--area de resultado-->
+              <div class="display-screen">
+                  <div id="display"> </div>
+              </div>
+    
+              <!--numeros y botones de la calculadora-->
+              <div class="buttons">
+    
+                  <table>
+                      <!--primera fila-->
+                      <tr>
+                          <td>
+                              <button class="btn-operator" id="clear"> C </button>
+                          </td>
+                          <td>
+                              <button class="btn-operator" id="/"> &divide; </button>
+                          </td>
+                          <td>
+                              <button class="btn-operator" id="*"> &times; </button>
+                          </td>
+                          <td>
+                              <button class="btn-operator" id="backspace"> <span  style="font-size: xx-large;" class="material-symbols-outlined">
+                                  backspace
+                              </span> </button>
+                          </td>
+                      </tr>
+    
+                      <!--fila-->
+                      <tr>
+                          <td>
+                              <button class="btn-number" id="7"> 7 </button>
+                          </td>
+                          <td>
+                              <button class="btn-number" id="8"> 8 </button>
+                          </td>
+                          <td>
+                              <button class="btn-number" id="9"> 9 </button>
+                          </td>
+                          <td>
+                              <button class="btn-operator" id="-"> - </button>
+                          </td>
+                      </tr>
+    
+                      <!--tercera fila-->
+                      <tr>
+                          <td><button class="btn-number" id="4"> 4 </button></td>
+                          <td><button class="btn-number" id="5"> 5 </button></td>
+                          <td><button class="btn-number" id="6"> 6 </button></td>
+                          <td><button class="btn-operator" id="+"> + </button></td>
+                      </tr>
+    
+                      <!--fila-->
+                      <tr>
+                          <td><button class="btn-number" id="1"> 1 </button></td>
+                          <td><button class="btn-number" id="2"> 2 </button></td>
+                          <td><button class="btn-number" id="3"> 3 </button></td>
+                          <td rowspan="2"><button class="btn-equal" id="equal"> = </button></td>
+                      </tr>
+    
+                      <!-- ultima fila-->
+                      <tr>
+                          <td><button class="btn-operator" id="("> ( </button></td>
+                          <td><button class="btn-operator" id=")"> ) </button></td>
+                          <td><button class="btn-number" id="0"> 0 </button></td>
+                      </tr>
+                  </table>
+              </div>
 
-                <table>
-                    <!--primera fila-->
-                    <tr>
-                        <td>
-                            <button class="btn-operator" id="clear"> C </button>
-                        </td>
-                        <td>
-                            <button class="btn-operator" id="/"> &divide; </button>
-                        </td>
-                        <td>
-                            <button class="btn-operator" id="*"> &times; </button>
-                        </td>
-                        <td>
-                            <button class="btn-operator" id="backspace"> <span class="material-symbols-outlined">
-                                backspace
-                            </span> </button>
-                        </td>
-                    </tr>
+          </div> 
 
-                    <!--fila-->
-                    <tr>
-                        <td>
-                            <button class="btn-number" id="7"> 7 </button>
-                        </td>
-                        <td>
-                            <button class="btn-number" id="8"> 8 </button>
-                        </td>
-                        <td>
-                            <button class="btn-number" id="9"> 9 </button>
-                        </td>
-                        <td>
-                            <button class="btn-operator" id="-"> - </button>
-                        </td>
-                    </tr>
-
-                    <!--tercera fila-->
-                    <tr>
-                        <td><button class="btn-number" id="4"> 4 </button></td>
-                        <td><button class="btn-number" id="5"> 5 </button></td>
-                        <td><button class="btn-number" id="6"> 6 </button></td>
-                        <td><button class="btn-operator" id="+"> + </button></td>
-                    </tr>
-
-                    <!--fila-->
-                    <tr>
-                        <td><button class="btn-number" id="1"> 1 </button></td>
-                        <td><button class="btn-number" id="2"> 2 </button></td>
-                        <td><button class="btn-number" id="3"> 3 </button></td>
-                        <td rowspan="2"><button class="btn-equal" id="equal"> = </button></td>
-                    </tr>
-
-                    <!-- ultima fila-->
-                    <tr>
-                        <td><button class="btn-operator" id="("> ( </button></td>
-                        <td><button class="btn-operator" id=")"> ) </button></td>
-                        <td><button class="btn-number" id="0"> 0 </button></td>
-                    </tr>
-                </table>
-            </div>
 
         </div>
 
